@@ -89,9 +89,7 @@ public abstract class BaseMenu {
                 .setGui(this.build())
                 .build();
 
-        if (!Bukkit.isPrimaryThread())
-            Bukkit.getScheduler().runTask(plugin, window::open);
-        else
-            window.open();
+        if (!Bukkit.isPrimaryThread()) Bukkit.getScheduler().runTask(plugin, window::open);
+        else window.open();
     }
 }
