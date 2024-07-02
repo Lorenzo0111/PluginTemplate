@@ -1,0 +1,5 @@
+name: PluginTemplate
+version: '${version}'
+main: me.lorenzo0111.plugintemplate.TemplatePlugin
+api-version: '1.13'
+authors: [Lorenzo0111]
